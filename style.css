@@ -1,10 +1,19 @@
 body{
 
-background:#050816;
-font-family:'Poppins',sans-serif;
-color:white;
 margin:0;
 padding:40px;
+font-family:'Poppins',sans-serif;
+color:white;
+
+/* fondo tipo galaxia */
+
+background:
+radial-gradient(circle at 20% 20%, #7c3aed22 0%, transparent 40%),
+radial-gradient(circle at 80% 60%, #9333ea22 0%, transparent 40%),
+radial-gradient(circle at 50% 90%, #6d28d922 0%, transparent 40%),
+#020617;
+
+min-height:100vh;
 
 }
 
@@ -220,3 +229,4 @@ grid-template-columns:1fr;
 }
 
 }
+
