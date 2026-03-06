@@ -1,193 +1,174 @@
-body{
+<!DOCTYPE html>
+<html lang="es">
 
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#050505;
-color:white;
+<head>
 
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Juan Esteban Velásquez | Portafolio</title>
 
-/* NAVBAR */
+<link rel="stylesheet" href="style.css">
 
-.navbar{
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+</head>
 
-padding:25px 80px;
 
-border-bottom:1px solid #1f1f1f;
+<body>
 
-}
+<!-- NAVBAR -->
 
-.logo{
+<nav class="navbar">
 
-font-weight:700;
-font-size:20px;
+<div class="logo">
 
-}
+Juan Esteban Velásquez
 
-.menu{
+</div>
 
-display:flex;
-gap:30px;
-font-size:14px;
+<div class="menu">
 
-}
+<span>Técnico en Sistemas</span>
 
-.menu a{
+<span>Palmira, Colombia</span>
 
-color:white;
-text-decoration:none;
+<span>+57 302 357 2644</span>
 
-}
+<a href="mailto:juanvelasquez2211@gmail.com">Correo</a>
 
-.menu a:hover{
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
 
-color:#7c3aed;
+</div>
 
-}
+</nav>
 
 
-/* HERO */
 
-.hero{
+<!-- HERO -->
 
-padding:120px 80px;
+<section class="hero">
 
-max-width:900px;
+<h1>
 
-}
+Técnico en Sistemas especializado en  
+<span>Desarrollo Web, Automatización</span>  
+y Soporte TI.
 
-.hero h1{
+</h1>
 
-font-size:60px;
-line-height:1.1;
-font-weight:600;
+<p>
 
-}
+Experiencia desarrollando soluciones web con  
+PHP, JavaScript y MySQL para optimizar procesos.
 
-.hero span{
+</p>
 
-color:#3b82f6;
+</section>
 
-}
 
-.hero p{
 
-margin-top:25px;
-color:#aaa;
-font-size:18px;
+<!-- CONTENIDO -->
 
-}
+<section class="content">
 
 
-/* CONTENT */
+<div class="card">
 
-.content{
+<h2>Sobre mí</h2>
 
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+<p>
 
-padding:80px;
+Técnico en Sistemas con experiencia en soporte TI, automatización de procesos y desarrollo web utilizando PHP, JavaScript y MySQL.
 
-}
+</p>
 
+</div>
 
-/* CARDS */
 
-.card{
 
-background:#0b0b0b;
+<div class="card">
 
-border-radius:15px;
+<h2>Skills</h2>
 
-padding:30px;
+<div class="chips">
 
-border:1px solid #1a1a1a;
+<span>PHP</span>
+<span>JavaScript</span>
+<span>SQL</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Git</span>
+<span>Power Automate</span>
 
-transition:0.3s;
+</div>
 
-}
+</div>
 
-.card:hover{
 
-transform:translateY(-6px);
 
-border-color:#7c3aed;
+<div class="card">
 
-}
+<h2>Proyecto</h2>
 
+<h3>Sistema de Actas</h3>
 
-/* CHIPS */
+<p>
 
-.chips{
+Generación automática de reportes PDF y envío de correos.
 
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:10px;
+</p>
 
-}
+<span class="tech">
 
-.chips span{
+PHP · JavaScript · MySQL
 
-background:#1a1a1a;
+</span>
 
-padding:6px 14px;
+</div>
 
-border-radius:20px;
 
-font-size:13px;
 
-}
+<div class="card">
 
+<h2>Herramientas</h2>
 
-/* TECH */
+<div class="chips">
 
-.tech{
+<span>VS Code</span>
+<span>GitHub</span>
+<span>MySQL</span>
+<span>Hostinger</span>
+<span>Power Automate</span>
+<span>Office</span>
 
-color:#7c3aed;
+</div>
 
-}
+</div>
 
 
-/* LIST */
 
-ul{
+<div class="card">
 
-padding-left:18px;
-line-height:1.8;
+<h2>Experiencia</h2>
 
-}
+<ul>
 
+<li>Soporte técnico a usuarios</li>
+<li>Mantenimiento de equipos</li>
+<li>Instalación de redes</li>
+<li>Automatización de procesos</li>
+<li>Desarrollo de herramientas web</li>
 
-/* RESPONSIVE */
+</ul>
 
-@media(max-width:900px){
+</div>
 
-.hero h1{
 
-font-size:40px;
 
-}
+</section>
 
-.content{
 
-grid-template-columns:1fr;
+</body>
 
-padding:40px;
-
-}
-
-.navbar{
-
-flex-direction:column;
-gap:10px;
-
-}
-
-}
+</html>
