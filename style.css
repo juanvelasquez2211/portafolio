@@ -51,7 +51,7 @@ color:#3b82f6;
 
 display:grid;
 
-grid-template-columns: 1.4fr 1fr 1fr;
+grid-template-columns: 1.5fr 1fr 1fr;
 
 gap:40px;
 
@@ -312,6 +312,7 @@ letter-spacing:-2px;
 opacity:1;
 transform:translateY(0);
 }
+
 
 
 
