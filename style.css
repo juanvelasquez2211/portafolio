@@ -235,4 +235,95 @@ gap:10px;
 
 }
 
+.extra-section{
+
+padding:80px;
+
 }
+
+.extra-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+.extra-card{
+
+background:#0b0b0b;
+border:1px solid #1a1a1a;
+border-radius:14px;
+padding:25px;
+
+}
+
+.extra-card h2{
+
+margin-top:0;
+
+}
+
+.education{
+
+margin-bottom:20px;
+
+}
+
+.education h3{
+
+margin:0;
+font-size:16px;
+
+}
+
+.education p{
+
+margin:4px 0;
+color:#aaa;
+
+}
+
+.education span{
+
+font-size:13px;
+color:#666;
+
+}
+
+.extra-card ul{
+
+padding-left:18px;
+line-height:1.7;
+
+}
+
+@media(max-width:900px){
+
+.extra-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+.cv-btn{
+
+background:#2563eb;
+padding:8px 16px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+font-size:14px;
+font-weight:500;
+
+}
+
+.cv-btn:hover{
+
+background:#1d4ed8;
+
+}  
+  
+
