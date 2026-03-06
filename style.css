@@ -219,13 +219,13 @@ color:#3b82f6;
 
 color:white;
 text-decoration:none;
+font-size:14px;
 
 }
 
 .cv-btn:hover{
 color:#3b82f6;
 }
-
 
 /* RESPONSIVE */
 
@@ -308,6 +308,7 @@ letter-spacing:-2px;
 opacity:1;
 transform:translateY(0);
 }
+
 
 
 
