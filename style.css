@@ -1,141 +1,114 @@
 body{
 
 margin:0;
-padding:40px;
 font-family:'Poppins',sans-serif;
+background:#050505;
 color:white;
 
-/* fondo tipo galaxia */
-
-background:
-radial-gradient(circle at 20% 20%, #7c3aed22 0%, transparent 40%),
-radial-gradient(circle at 80% 60%, #9333ea22 0%, transparent 40%),
-radial-gradient(circle at 50% 90%, #6d28d922 0%, transparent 40%),
-#020617;
-
-min-height:100vh;
-
 }
 
-#particles{
 
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
+/* NAVBAR */
 
-}
+.navbar{
 
-.container{
-
-max-width:1200px;
-margin:auto;
-
-}
-
-/* TOP SECTION */
-
-.top-section{
-
-display:grid;
-grid-template-columns:250px 1fr 1fr;
-gap:25px;
-margin-bottom:30px;
-
-}
-
-.avatar-card{
-
-background:#0f172a;
-border-radius:20px;
-padding:30px;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-box-shadow:0 0 30px rgba(0,0,0,0.4);
-box-shadow:0 0 25px #7c3aed;
+
+padding:25px 80px;
+
+border-bottom:1px solid #1f1f1f;
 
 }
 
-.avatar-card img{
+.logo{
 
-width:170px;
-border-radius:20px;
-
-}
-
-.intro-card{
-
-background:#0f172a;
-border-radius:20px;
-padding:30px;
+font-weight:700;
+font-size:20px;
 
 }
 
-.subtitle{
+.menu{
 
-color:#9f7aea;
-
-}
-
-.info{
-
-margin-top:10px;
 display:flex;
-flex-direction:column;
-gap:6px;
-
-}
-
-.info a{
-
-color:#8b5cf6;
-text-decoration:none;
-
-}
-
-.cv-button{
-
-display:inline-block;
-margin-top:15px;
-background:#7c3aed;
-padding:10px 20px;
-border-radius:20px;
-text-decoration:none;
-color:white;
+gap:30px;
 font-size:14px;
 
 }
 
-.cv-button:hover{
+.menu a{
 
-background:#6d28d9;
-
-}
-
-.about-card{
-
-background:#0f172a;
-border-radius:20px;
-padding:30px;
+color:white;
+text-decoration:none;
 
 }
 
-/* GRID */
+.menu a:hover{
 
-.grid{
+color:#7c3aed;
+
+}
+
+
+/* HERO */
+
+.hero{
+
+padding:120px 80px;
+
+max-width:900px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+line-height:1.1;
+font-weight:600;
+
+}
+
+.hero span{
+
+color:#3b82f6;
+
+}
+
+.hero p{
+
+margin-top:25px;
+color:#aaa;
+font-size:18px;
+
+}
+
+
+/* CONTENT */
+
+.content{
 
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:25px;
+gap:30px;
+
+padding:80px;
 
 }
 
+
+/* CARDS */
+
 .card{
 
-background:#0f172a;
-border-radius:20px;
-padding:25px;
+background:#0b0b0b;
+
+border-radius:15px;
+
+padding:30px;
+
+border:1px solid #1a1a1a;
+
 transition:0.3s;
 
 }
@@ -143,92 +116,78 @@ transition:0.3s;
 .card:hover{
 
 transform:translateY(-6px);
-box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+border-color:#7c3aed;
 
 }
 
-.card h2{
 
-margin-bottom:15px;
+/* CHIPS */
 
-}
-
-/* SKILLS */
-
-.skills{
+.chips{
 
 display:flex;
 flex-wrap:wrap;
 gap:10px;
+margin-top:10px;
 
 }
 
-.skill{
+.chips span{
 
-background:linear-gradient(45deg,#7c3aed,#9333ea);
-padding:8px 15px;
-border-radius:20px;
-font-size:14px;
+background:#1a1a1a;
 
-}
+padding:6px 14px;
 
-/* TOOLS */
-
-.tools{
-
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-
-}
-
-.tool{
-
-background:#1e293b;
-padding:8px 15px;
 border-radius:20px;
 
-}
-
-/* PROYECTOS */
-
-.project h3{
-
-margin-bottom:5px;
+font-size:13px;
 
 }
+
+
+/* TECH */
 
 .tech{
 
-color:#9f7aea;
+color:#7c3aed;
 
 }
 
-/* EXPERIENCIA */
+
+/* LIST */
 
 ul{
 
-padding-left:20px;
+padding-left:18px;
 line-height:1.8;
 
 }
+
 
 /* RESPONSIVE */
 
 @media(max-width:900px){
 
-.top-section{
+.hero h1{
+
+font-size:40px;
+
+}
+
+.content{
 
 grid-template-columns:1fr;
 
-}
-
-.grid{
-
-grid-template-columns:1fr;
+padding:40px;
 
 }
 
+.navbar{
+
+flex-direction:column;
+gap:10px;
+
 }
 
-
+}
