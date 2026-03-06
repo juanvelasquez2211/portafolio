@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Juan Esteban Velásquez | Portafolio</title>
 
@@ -11,21 +12,23 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
 </head>
 
 
 <body>
 
+<div id="particles"></div>
+
 <div class="container">
 
-<!-- PRIMERA FILA -->
+<!-- TOP -->
 
 <div class="top-section">
 
 <div class="avatar-card">
-
 <img src="avatar.jpg">
-
 </div>
 
 
@@ -35,7 +38,7 @@
 
 <h3>Técnico en Sistemas</h3>
 
-<p>
+<p class="subtitle">
 Desarrollo Web · Automatización · Soporte TI
 </p>
 
@@ -43,11 +46,15 @@ Desarrollo Web · Automatización · Soporte TI
 
 <span>📍 Palmira, Colombia</span>
 
-<a href="mailto:tuemail@gmail.com">Email</a>
-
 <a href="#">LinkedIn</a>
 
+<a href="mailto:tuemail@gmail.com">Email</a>
+
 </div>
+
+<a class="cv-button" href="Hoja_de_vida.pdf" target="_blank">
+Descargar CV
+</a>
 
 </div>
 
@@ -67,9 +74,11 @@ PHP, JavaScript y MySQL.
 </div>
 
 
-<!-- SEGUNDA FILA -->
+<!-- GRID -->
 
 <div class="grid">
+
+<!-- SKILLS -->
 
 <div class="card">
 
@@ -78,17 +87,11 @@ PHP, JavaScript y MySQL.
 <div class="skills">
 
 <span class="skill">PHP</span>
-
 <span class="skill">JavaScript</span>
-
 <span class="skill">SQL</span>
-
 <span class="skill">HTML</span>
-
 <span class="skill">CSS</span>
-
 <span class="skill">Git</span>
-
 <span class="skill">Power Automate</span>
 
 </div>
@@ -96,22 +99,28 @@ PHP, JavaScript y MySQL.
 </div>
 
 
+<!-- PROYECTOS -->
+
 <div class="card">
 
 <h2>Proyectos</h2>
 
+<div class="project">
+
 <h3>Sistema de Actas</h3>
 
 <p>
-Generación automática de reportes PDF y envío por correo.
+Generación automática de reportes PDF y envío de correos.
 </p>
 
-<p class="tech">
-PHP · JavaScript · MySQL
-</p>
+<span class="tech">PHP · JavaScript · MySQL</span>
 
 </div>
 
+</div>
+
+
+<!-- HERRAMIENTAS -->
 
 <div class="card">
 
@@ -120,21 +129,18 @@ PHP · JavaScript · MySQL
 <div class="tools">
 
 <span class="tool">VS Code</span>
-
 <span class="tool">GitHub</span>
-
 <span class="tool">MySQL</span>
-
 <span class="tool">Hostinger</span>
-
 <span class="tool">Power Automate</span>
-
 <span class="tool">Office</span>
 
 </div>
 
 </div>
 
+
+<!-- EXPERIENCIA -->
 
 <div class="card">
 
@@ -143,25 +149,22 @@ PHP · JavaScript · MySQL
 <ul>
 
 <li>Soporte técnico a usuarios</li>
-
 <li>Mantenimiento de equipos</li>
-
 <li>Instalación de redes</li>
-
 <li>Automatización de procesos</li>
-
 <li>Desarrollo de herramientas web</li>
 
 </ul>
 
 </div>
 
-
 </div>
 
 </div>
+
+
+<script src="particles.js"></script>
 
 </body>
 
 </html>
-
