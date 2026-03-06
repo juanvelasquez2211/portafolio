@@ -74,9 +74,7 @@ gap:30px;
 }
 
 .hero h1{
-font-size:64px;
-line-height:1.1;
-}
+font-size:clamp(48px,6vw,72px);
 
 .hero span{
 color:#3b82f6;
@@ -314,5 +312,6 @@ letter-spacing:-2px;
 opacity:1;
 transform:translateY(0);
 }
+
 
 
