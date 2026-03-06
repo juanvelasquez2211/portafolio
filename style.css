@@ -455,4 +455,85 @@ grid-template-columns:1fr;
 
 }
 
+.education-section{
+
+padding:80px;
+
+}
+
+.education-card{
+
+background:#0b0b0b;
+border:1px solid #1a1a1a;
+border-radius:14px;
+
+padding:40px;
+
+width:100%;
+
+}
+
+.education-card h2{
+
+margin-bottom:40px;
+
+}
+
+
+/* GRID HORIZONTAL */
+
+.education-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+
+/* ITEMS */
+
+.education-item{
+
+background:#111;
+
+padding:20px;
+
+border-radius:10px;
+
+border:1px solid #222;
+
+transition:0.3s;
+
+}
+
+.education-item:hover{
+
+border-color:#3b82f6;
+transform:translateY(-4px);
+
+}
+
+.education-item h3{
+
+margin:0;
+font-size:16px;
+
+}
+
+.education-item p{
+
+margin:5px 0;
+color:#aaa;
+
+}
+
+.education-item span{
+
+font-size:13px;
+color:#3b82f6;
+
+}
 
