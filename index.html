@@ -1,172 +1,193 @@
-<!DOCTYPE html>
-<html lang="es">
+body{
 
-<head>
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:white;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
 
-<title>Juan Esteban Velásquez | Portafolio</title>
 
-<link rel="stylesheet" href="style.css">
+/* NAVBAR */
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+.navbar{
 
-<script src="particles.js"></script>
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-</head>
+padding:25px 80px;
 
+border-bottom:1px solid #1f1f1f;
 
-<body>
+}
 
-<div id="particles"></div>
+.logo{
 
-<div class="container">
+font-weight:700;
+font-size:20px;
 
-<!-- TOP -->
+}
 
-<div class="top-section">
+.menu{
 
-<div class="avatar-card">
-<img src="avatar.jpg">
-</div>
+display:flex;
+gap:30px;
+font-size:14px;
 
+}
 
-<div class="intro-card">
+.menu a{
 
-<h1>Juan Esteban Velásquez</h1>
+color:white;
+text-decoration:none;
 
-<h3>Técnico en Sistemas</h3>
+}
 
-<p class="subtitle">
-Desarrollo Web · Automatización · Soporte TI
-</p>
+.menu a:hover{
 
-<div class="info">
+color:#7c3aed;
 
-<span>📍 Palmira, Colombia</span>
+}
 
-<a href="https://www.linkedin.com/in/juan-esteban-velasquez-idarraga-724140367/">LinkedIn</a>
 
-<a href="juanvelasquez2211@gmail.com">gmail</a>
+/* HERO */
 
-</div>
+.hero{
 
-<a class="cv-button" href="Hoja_de_vida_oficial_JUAN_ESTEBAN_VELASQUEZ.pdf" target="_blank">
-Descargar CV
-</a>
+padding:120px 80px;
 
-</div>
+max-width:900px;
 
+}
 
-<div class="about-card">
+.hero h1{
 
-<h2>Sobre mí</h2>
+font-size:60px;
+line-height:1.1;
+font-weight:600;
 
-<p>
-Técnico en Sistemas con experiencia en soporte TI,
-automatización de procesos y desarrollo web utilizando
-PHP, JavaScript y MySQL.
-</p>
+}
 
-</div>
+.hero span{
 
-</div>
+color:#3b82f6;
 
+}
 
-<!-- GRID -->
+.hero p{
 
-<div class="grid">
+margin-top:25px;
+color:#aaa;
+font-size:18px;
 
-<!-- SKILLS -->
+}
 
-<div class="card">
 
-<h2>Skills</h2>
+/* CONTENT */
 
-<div class="skills">
+.content{
 
-<span class="skill">PHP</span>
-<span class="skill">JavaScript</span>
-<span class="skill">SQL</span>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">Git</span>
-<span class="skill">Power Automate</span>
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
 
-</div>
+padding:80px;
 
-</div>
+}
 
 
-<!-- PROYECTOS -->
+/* CARDS */
 
-<div class="card">
+.card{
 
-<h2>Proyectos</h2>
+background:#0b0b0b;
 
-<div class="project">
+border-radius:15px;
 
-<h3>Sistema de Actas</h3>
+padding:30px;
 
-<p>
-Generación automática de reportes PDF y envío de correos.
-</p>
+border:1px solid #1a1a1a;
 
-<span class="tech">PHP · JavaScript · MySQL</span>
+transition:0.3s;
 
-</div>
+}
 
-</div>
+.card:hover{
 
+transform:translateY(-6px);
 
-<!-- HERRAMIENTAS -->
+border-color:#7c3aed;
 
-<div class="card">
+}
 
-<h2>Herramientas</h2>
 
-<div class="tools">
+/* CHIPS */
 
-<span class="tool">VS Code</span>
-<span class="tool">GitHub</span>
-<span class="tool">MySQL</span>
-<span class="tool">Hostinger</span>
-<span class="tool">Power Automate</span>
-<span class="tool">Office</span>
+.chips{
 
-</div>
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:10px;
 
-</div>
+}
 
+.chips span{
 
-<!-- EXPERIENCIA -->
+background:#1a1a1a;
 
-<div class="card">
+padding:6px 14px;
 
-<h2>Experiencia</h2>
+border-radius:20px;
 
-<ul>
+font-size:13px;
 
-<li>Soporte técnico a usuarios</li>
-<li>Mantenimiento de equipos</li>
-<li>Instalación de redes</li>
-<li>Automatización de procesos</li>
-<li>Desarrollo de herramientas web</li>
+}
 
-</ul>
 
-</div>
+/* TECH */
 
-</div>
+.tech{
 
-</div>
+color:#7c3aed;
 
+}
 
-<script src="particles.js"></script>
 
-</body>
+/* LIST */
 
-</html>
+ul{
 
+padding-left:18px;
+line-height:1.8;
 
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.content{
+
+grid-template-columns:1fr;
+
+padding:40px;
+
+}
+
+.navbar{
+
+flex-direction:column;
+gap:10px;
+
+}
+
+}
