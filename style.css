@@ -324,6 +324,58 @@ font-weight:500;
 
 background:#1d4ed8;
 
-}  
+} 
+
+.extra-section{
+
+padding:80px;
+
+}
+
+.extra-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+.education{
+
+margin-top:15px;
+
+}
+
+.education h3{
+
+margin:0;
+font-size:16px;
+
+}
+
+.education p{
+
+margin:4px 0;
+color:#aaa;
+
+}
+
+.education span{
+
+font-size:13px;
+color:#3b82f6;
+
+}
+
+@media(max-width:900px){
+
+.extra-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
   
+
 
