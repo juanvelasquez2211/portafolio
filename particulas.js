@@ -1,13 +1,37 @@
 tsParticles.load("particles", {
+
+background: {
+color: {
+value: "transparent"
+}
+},
+
 particles: {
-number: { value: 60 },
-size: { value: 2 },
-move: { speed: 1 },
-color: { value: "#8b5cf6" },
+
+number: {
+value: 80
+},
+
+color: {
+value: "#7c3aed"
+},
+
 links: {
 enable: true,
-color: "#8b5cf6",
-distance: 150
+distance: 150,
+color: "#7c3aed",
+opacity: 0.3
+},
+
+move: {
+enable: true,
+speed: 1
+},
+
+size: {
+value: 2
 }
+
 }
+
 });
