@@ -306,3 +306,8 @@ font-weight:700;
 letter-spacing:-2px;
 
 }
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
