@@ -1,181 +1,141 @@
 body{
 
-background:#060b1a;
-
+background:#050816;
 font-family:'Poppins',sans-serif;
-
 color:white;
-
 margin:0;
-
 padding:40px;
 
 }
 
+#particles{
+
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+
+}
 
 .container{
 
 max-width:1200px;
-
 margin:auto;
 
 }
 
-
-/* PRIMERA FILA */
+/* TOP SECTION */
 
 .top-section{
 
 display:grid;
-
 grid-template-columns:250px 1fr 1fr;
-
 gap:25px;
-
 margin-bottom:30px;
 
 }
 
-
-/* AVATAR */
-
 .avatar-card{
 
-background:#111827;
-
+background:#0f172a;
 border-radius:20px;
-
 padding:30px;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
-box-shadow:0 0 20px rgba(0,0,0,0.4);
+box-shadow:0 0 30px rgba(0,0,0,0.4);
 
 }
-
 
 .avatar-card img{
 
 width:170px;
-
 border-radius:20px;
 
 }
 
-
-/* TARJETA INTRO */
-
 .intro-card{
 
-background:#111827;
-
+background:#0f172a;
 border-radius:20px;
-
 padding:30px;
 
 }
 
+.subtitle{
 
-.intro-card h1{
-
-margin-bottom:10px;
-
-font-size:28px;
+color:#9f7aea;
 
 }
-
-
-.intro-card h3{
-
-color:#8b5cf6;
-
-margin-bottom:10px;
-
-}
-
 
 .info{
 
-margin-top:15px;
-
+margin-top:10px;
 display:flex;
-
 flex-direction:column;
-
-gap:8px;
+gap:6px;
 
 }
-
 
 .info a{
 
 color:#8b5cf6;
-
 text-decoration:none;
 
 }
 
+.cv-button{
 
-/* SOBRE MI */
+display:inline-block;
+margin-top:15px;
+background:#7c3aed;
+padding:10px 20px;
+border-radius:20px;
+text-decoration:none;
+color:white;
+font-size:14px;
+
+}
+
+.cv-button:hover{
+
+background:#6d28d9;
+
+}
 
 .about-card{
 
-background:#111827;
-
+background:#0f172a;
 border-radius:20px;
-
 padding:30px;
 
 }
 
-
-.about-card p{
-
-line-height:1.6;
-
-}
-
-
-/* GRID PRINCIPAL */
+/* GRID */
 
 .grid{
 
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
 gap:25px;
 
 }
 
-
-/* TARJETAS */
-
 .card{
 
-background:#111827;
-
+background:#0f172a;
 border-radius:20px;
-
 padding:25px;
-
 transition:0.3s;
 
 }
 
-
 .card:hover{
 
 transform:translateY(-6px);
-
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
 
 }
-
 
 .card h2{
 
@@ -183,74 +143,80 @@ margin-bottom:15px;
 
 }
 
-
 /* SKILLS */
 
 .skills{
 
 display:flex;
-
 flex-wrap:wrap;
-
 gap:10px;
 
 }
 
-
 .skill{
 
 background:linear-gradient(45deg,#7c3aed,#9333ea);
-
 padding:8px 15px;
-
 border-radius:20px;
-
 font-size:14px;
 
 }
-
 
 /* TOOLS */
 
 .tools{
 
 display:flex;
-
 flex-wrap:wrap;
-
 gap:10px;
 
 }
 
-
 .tool{
 
-background:#1f2937;
-
+background:#1e293b;
 padding:8px 15px;
-
 border-radius:20px;
 
 }
 
+/* PROYECTOS */
 
-/* LISTAS */
+.project h3{
+
+margin-bottom:5px;
+
+}
+
+.tech{
+
+color:#9f7aea;
+
+}
+
+/* EXPERIENCIA */
 
 ul{
 
 padding-left:20px;
-
-line-height:1.7;
+line-height:1.8;
 
 }
 
+/* RESPONSIVE */
 
-/* PROYECTOS */
+@media(max-width:900px){
 
-.tech{
+.top-section{
 
-color:#8b5cf6;
+grid-template-columns:1fr;
 
-margin-top:10px;
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
 
 }
